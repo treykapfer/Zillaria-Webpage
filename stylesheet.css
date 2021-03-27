@@ -154,6 +154,7 @@ section {
         
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
 
         padding-right: var(--globalpad);
         padding-left: var(--globalpad);
@@ -170,7 +171,6 @@ section {
         }
 
     .slideshow {
-        order: 2;
         background: var(--maincolor);
 
         border-radius: var(--rounderedge);
@@ -209,7 +209,7 @@ section {
         padding-left: var(--globalpad);
     }
 
-/*END FOOTER*/
+/*CONTACT US STYLES*/
 footer {
     align-items: flex-end;
     justify-content: flex-end;
