@@ -1,3 +1,4 @@
+/*THIS IS THE STYLE SHEET FOR THE HOME PAGE*/
 /*GLOBAL DECLARATIONS*/
 :root {
     --headerbg: rgb(49, 58, 50);
@@ -6,10 +7,13 @@
     --globalmar: .5em;
     --globalpad: .5em;
     --roundedge: 10px;
+    --rounderedge: 25px;
     --whitesmoke: rgba(255, 255, 255, 0.74);
     --bodybg: rgb(167, 204, 172);
     --highlight: rgb(153, 0, 255);
     --maincolor: black;
+    --breakpoint1: 768px;
+    --breakpoint2: 468px;
 }
 
 /*IMPORTED FONTS
@@ -33,8 +37,9 @@ font-family: 'Sigmar One', cursive;
     font-family: 'Marcellus SC', serif;
 }
 
-/*remove invsible margins*/
+
 body {
+    /*remove invsible margins*/
     margin: 0px auto;
 }
 
@@ -52,8 +57,6 @@ body {
     a:hover {
         text-shadow: 1px 1px 5px var(--whitesmoke);
     }
-
-
 
 
 /*HEADER DECLARATIONS*/
@@ -130,8 +133,10 @@ main {
             color: var(--highlight);
         }
 
+/*global section/box*/
 section {
     margin: var(--globalmar);
+
 }
 
 /*first box*/
@@ -149,21 +154,30 @@ section {
         
         display: flex;
         flex-direction: column;
+
+        padding-right: var(--globalpad);
+        padding-left: var(--globalpad);
     }
 
         .mainheader {
             text-align: center;
         }
 
+        .mainintro {
+            text-indent: 2em;
+            padding-right: var(--globalpad);
+            padding-left: var(--globalpad);
+        }
+
     .slideshow {
         order: 2;
         background: var(--maincolor);
 
-        border-radius: 25px;
+        border-radius: var(--rounderedge);
     }
 
         .slides {
-            border-radius: 25px;
+            border-radius: var(--rounderedge);
             background: var(--maincolor);
         }
 
@@ -184,5 +198,47 @@ section {
 }
 
     .sidesections h3 {
-        text-align: left;
+        text-align: center;
+        padding-right: var(--globalpad);
+        padding-left: var(--globalpad);
+    }
+
+    .sidesections p {
+        text-indent: 2em;
+        padding-right: var(--globalpad);
+        padding-left: var(--globalpad);
+    }
+
+/*END FOOTER*/
+footer {
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    text-align: right;
+    color: var(--headerbg);
+}
+
+    footer h3 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    footer p {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    /*LINK STYLES*/
+    footer a:link {
+        text-decoration: none;
+        color: var(--headerbg);
+    }
+
+    footer a:visited {
+        text-decoration: none;
+        color: var(--headerbg);
+    }
+
+    footer a:hover {
+        color: var(--highlight);
     }

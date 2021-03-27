@@ -1,0 +1,16 @@
+/*THIS IS THE CSS SHEET FOR ALL OTHER PAGES*/
+/*GLOBAL DECLARATIONS*/
+:root {
+    --headerbg: rgb(49, 58, 50);
+    --navbg: black;
+    --headertext: honeydew;
+    --globalmar: .5em;
+    --globalpad: .5em;
+    --roundedge: 10px;
+    --whitesmoke: rgba(255, 255, 255, 0.74);
+    --bodybg: rgb(167, 204, 172);
+    --highlight: rgb(153, 0, 255);
+    --maincolor: black;
+    --breakpoint1: 768px;
+    --breakpoint2: 468px;
+}
