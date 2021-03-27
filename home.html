@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links-->
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="shortcut icon" type="image/x-icon" href="flavicon.png">
+        <!--Goodle Fonts-->
+        <!--All Other-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Bungee+Inline&family=Marcellus+SC&family=Reggae+One&family=Sigmar+One&display=swap" rel="stylesheet">
+                <!--font-family: 'Permanent Marker', cursive;-->
+        <!--Roboto-->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet"> 
+                <!--font-family: 'Roboto', sans-serif;-->
+    <title>&#9667; Zillaria &#9657; The Land of Titans</title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1><a href="home.html".html>Zillaria</a></h1>
+            <h2>The Land of Titans</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="landsrealms.html">Lands and Realms</a></li>
+                <li><a href="peopleculture.html">People and Cultures</a></li>
+                <li><a href="titans.html">The Titans</a></li>
+                <li><a href="history.html">Histories and Legends</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class=introbox1>
+                <section class="introsection">
+                    <div class="mainheader">
+                        <h2>Welcome to Zillaria, the Land of Titans!</h2>
+                    </div>
+                    <div class="mainintro">
+                        <p>Zillaria is a massive world ravaged by giant beasts, raging super-storms, and turbulent volcanic activity. Many of the diverse inhabitants of this world are entrenched in massive citadels to defend themselves from giant monster attacks, while others harness the power of the <a class="inlinelink" href="titans.html">world titans</a> and their spawn to build vast, sprawling empires.</p>
+                        <p>Central to all life on Zillaria are the pantheon of god-like <a class="inlinelink" href="titans.html">world titans</a>. Massive, kaiju-like beasts who shape the plane to their will, and enforce an eternal balance from the plane's core. If that balance is ever threatened, the <a class="inlinelink" href="titans.html">world titans</a> will be emerge and wreak havoc among the surface dwellers.</p>
+                    </div>
+                </section>
+                <section class="slideshow">
+                    <div id="slides">
+                        <img class="mySlides" src="titan01.png">
+                        <img class="mySlides" src="titan02.png">
+                        <img class="mySlides" src="titan03.png">
+                        <img class="mySlides" src="titan04.png">
+                        <img class="mySlides" src="titan05.png">
+                        <img class="mySlides" src="titan06.png">
+                            <script>
+                                var slideIndex = 0;
+                                carousel();
+
+                                function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";
+                                }
+                                slideIndex++;
+                                if (slideIndex > x.length) {slideIndex = 1}
+                                x[slideIndex-1].style.display = "flex";
+                                setTimeout(carousel, 2000); // Change image every 2 seconds
+                                }
+                            </script>
+                    </div>
+                </section>
+                </div>
+            <div class="sidesections">
+                <section>
+                    <h3>Section Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum dicta recusandae sunt? Est neque ratione magnam reiciendis tenetur cupiditate expedita inventore rerum esse repellat aliquid ipsam, culpa molestiae eos.</p>
+                </section>
+                <section>
+                    <h3>Section Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum dicta recusandae sunt? Est neque ratione magnam reiciendis tenetur cupiditate expedita inventore rerum esse repellat aliquid ipsam, culpa molestiae eos.</p>
+                </section>
+                <section>
+                    <h3>Section Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum dicta recusandae sunt? Est neque ratione magnam reiciendis tenetur cupiditate expedita inventore rerum esse repellat aliquid ipsam, culpa molestiae eos.</p>
+                </section>
+                <section>
+                    <h3>Section Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum dicta recusandae sunt? Est neque ratione magnam reiciendis tenetur cupiditate expedita inventore rerum esse repellat aliquid ipsam, culpa molestiae eos.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
