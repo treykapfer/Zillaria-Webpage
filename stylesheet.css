@@ -2,18 +2,21 @@
 /*GLOBAL DECLARATIONS*/
 :root {
     --headerbg: rgb(49, 58, 50);
+    --sectionbg: rgb(49, 58, 50);
+    --wrapback: rgb(49, 58, 50);
     --navbg: black;
     --headertext: honeydew;
-    --globalmar: .5em;
-    --globalpad: .5em;
-    --roundedge: 10px;
-    --rounderedge: 25px;
     --whitesmoke: rgba(255, 255, 255, 0.74);
     --bodybg: rgb(167, 204, 172);
     --highlight: rgb(153, 0, 255);
     --maincolor: black;
+
     --breakpoint1: 768px;
     --breakpoint2: 468px;
+    --globalmar: .5em;
+    --globalpad: .5em;
+    --roundedge: 10px;
+    --rounderedge: 25px;
 }
 
 /*IMPORTED FONTS
@@ -33,6 +36,8 @@ font-family: 'Sigmar One', cursive;
 .wrapper {
     display: flex;
     flex-direction: column;
+
+    background-color: var(--wrapback);
 
     font-family: 'Marcellus SC', serif;
 }
@@ -119,95 +124,149 @@ nav {
 main {
     display: flex;
 
+    color: var(--headertext);
 }
-
-    /*INLINE LINK STYLES*/
-        .inlinelink:link {
-        color: var(--maincolor);
-    }
-
-        .inlinelink:visited {
-        color: var(--maincolor);
-    }
-        .inlinelink:hover {
-            color: var(--highlight);
-        }
 
 /*global section/box*/
 section {
     margin: var(--globalmar);
-
 }
 
-/*first box*/
-.introbox1 {
+        /*INLINE LINK STYLES
+        section a:link {
+            color: var(--maincolor);
+        }
+    
+        section a:visited {
+            color: var(--maincolor);
+        }
+        section a:hover {
+                color: var(--highlight);
+            }
+        */
+
+
+/*RIGHT FLEX BOX*/
+.rightcolumn {
     flex: 2;
     order: 2;
 
     display: flex;
     flex-direction: column;
+
+    padding-right: var(--globalpad);
+    padding-left: var(--globalpad);
+    
+    margin-right: var(--globalmar);
 }
 
-    .introsection {
-        flex: 2;
-        order: 2;
+
         
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        padding-right: var(--globalpad);
-        padding-left: var(--globalpad);
-    }
-
-        .mainheader {
-            text-align: center;
-        }
-
-        .mainintro {
-            text-indent: 2em;
-            padding-right: var(--globalpad);
-            padding-left: var(--globalpad);
-        }
-
-    .slideshow {
-        background: var(--maincolor);
-
-        border-radius: var(--rounderedge);
-    }
-
-        .slides {
+        /*sets borders and background for introsection*/
+        .introsection {
             border-radius: var(--rounderedge);
+            border-color: var(--navbg);
+            border-style: solid;
+            border-width: 3px;
+    
+            background-color:var(--sectionbg);
+            background-image: url(roughtexture1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            margin-bottom: var(--globalmar);
+            padding-bottom: var(--globalpad);
+        }
+
+            .mainheader {
+                text-align: center;
+            }
+
+            .mainintro {
+                text-indent: 2em;
+                padding-right: var(--globalpad);
+                padding-left: var(--globalpad);
+            }
+
+        .slideshow {
             background: var(--maincolor);
+
+            border-radius: var(--rounderedge);
+            border-width: 3px;
+            border-style: solid;
+            border-color: var(--maincolor);
+            align-items:flex-start;
         }
 
-        .mySlides {
+            .slides {
+                border-radius: var(--rounderedge);
+                background: var(--maincolor);
+            }
 
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            .mySlides {
 
-            padding-right: 2em;
-            padding-left: 2em;
-        }
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
 
-/*secondbox*/
-.sidesections {
+                padding-right: 2em;
+                padding-left: 2em;
+
+                transition: 500ms;
+            }
+
+/*LEFT FLEX BOX*/
+.leftcolumn {
     flex: 1;
     order: 1;
+
+    margin-left: var(--globalmar);
 }
 
-    .sidesections h3 {
+    .sidebox {
+        border-radius: var(--rounderedge);
+        border-color: var(--navbg);
+        border-style: solid;
+        border-width: 3px;
+
+    }
+
+    .leftcolumn h3 {
         text-align: center;
         padding-right: var(--globalpad);
         padding-left: var(--globalpad);
     }
 
-    .sidesections p {
+    .leftcolumn p {
         text-indent: 2em;
         padding-right: var(--globalpad);
         padding-left: var(--globalpad);
     }
+
+        /*individual styles*/
+        #titanbox {
+            background-color: rgb(30, 39, 30);
+            background-image: url(kaijuback.png);
+            background-size: cover;
+        }
+
+        #realmbox {
+            background-color: rgb(39, 39, 32);
+            background-image: url(mapback.png);
+            background-size: cover;
+        }
+
+        #racepplbox {
+            background-color: rgb(39, 32, 32);
+            background-image: url(racesback.png);
+            background-size: cover;
+        }
+
+        #historybox {
+            background-color: rgb(32, 33, 39);
+            background-image: url(historyback.png);
+            background-size: cover;
+        }
 
 /*CONTACT US STYLES*/
 footer {
@@ -215,7 +274,7 @@ footer {
     justify-content: flex-end;
 
     text-align: right;
-    color: var(--headerbg);
+    color: var(--headertext);
 }
 
     footer h3 {
@@ -226,19 +285,4 @@ footer {
     footer p {
         margin-top: 0px;
         padding-top: 0px;
-    }
-
-    /*LINK STYLES*/
-    footer a:link {
-        text-decoration: none;
-        color: var(--headerbg);
-    }
-
-    footer a:visited {
-        text-decoration: none;
-        color: var(--headerbg);
-    }
-
-    footer a:hover {
-        color: var(--highlight);
     }
