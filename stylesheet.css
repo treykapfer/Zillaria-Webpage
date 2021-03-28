@@ -29,6 +29,8 @@ font-family: 'Marcellus SC', serif;
 font-family: 'Reggae One', cursive;
 
 font-family: 'Sigmar One', cursive;
+
+font-family: 'Roboto', sans-serif;
 */
 
 /*DESKTOP DISPLAY*/
@@ -114,7 +116,7 @@ nav {
             text-decoration: none;
             color: var(--headertext);
 
-            background-origin:padding-box;
+            background-origin: padding-box;
             background-image: url(scale_pattern.png);
             background-size: 10rem;
         }
@@ -132,18 +134,9 @@ section {
     margin: var(--globalmar);
 }
 
-        /*INLINE LINK STYLES
-        section a:link {
-            color: var(--maincolor);
-        }
-    
-        section a:visited {
-            color: var(--maincolor);
-        }
-        section a:hover {
-                color: var(--highlight);
-            }
-        */
+    section p {
+        font-family: 'Roboto', sans-serif;
+    }
 
 
 /*RIGHT FLEX BOX*/
@@ -170,7 +163,7 @@ section {
             border-width: 3px;
     
             background-color:var(--sectionbg);
-            background-image: url(roughtexture1.png);
+            background-image: url(roughback2.png);
             background-repeat: no-repeat;
             background-size: cover;
 
