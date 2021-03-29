@@ -21,6 +21,8 @@
         <header>
             <h1><a href="home.html".html>Zillaria</a></h1>
             <h2>The Land of Titans</h2>
+            <p>Your current resolution is not a supported view on this page</p>
+            <p>Please view this page with higher resolution.</p>
         </header>
         <nav>
             <ul>
@@ -32,7 +34,7 @@
         </nav>
         <main>
             <div class="rightcolumn">
-                <section class="introsection">
+                <section class="introsection" id="topintrosec">
                     <div class="mainheader">
                         <h2>Welcome to Zillaria, the Land of Titans!</h2>
                     </div>
@@ -50,29 +52,39 @@
                         <img class="mySlides" src="titan04.png">
                         <img class="mySlides" src="titan05.png">
                         <img class="mySlides" src="titan06.png">
-                            <script>
-                                var slideIndex = 0;
-                                carousel();
+                        <script>
+                            var slideIndex = 0;
+                            carousel();
 
-                                function carousel() {
-                                var i;
-                                var x = document.getElementsByClassName("mySlides");
-                                for (i = 0; i < x.length; i++) {
-                                    x[i].style.display = "none";
-                                }
-                                slideIndex++;
-                                if (slideIndex > x.length) {slideIndex = 1}
-                                x[slideIndex-1].style.display = "flex";
-                                setTimeout(carousel, 3000); // Change image every 3 seconds
-                                }
-                            </script>
+                            function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > x.length) {slideIndex = 1}
+                            x[slideIndex-1].style.display = "flex";
+                            setTimeout(carousel, 3000); // Change image every 3 seconds
+                            }
+                        </script>
+                    </div>
+                </section>
+                <section class="introsection" id="bottomintrosec">
+                    <div class="mainheader">
+                        <h2>Section Title</h2>
+                    </div>
+                    <div class="mainintro">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, tempore deserunt, iste perspiciatis delectus, voluptatem quibusdam corrupti optio doloremque laborum sequi veritatis consequuntur sapiente. Ipsam ipsa eius voluptatibus doloribus voluptate?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facere id quis, saepe nulla temporibus voluptatem asperiores velit, soluta aliquid natus ut. Numquam suscipit qui incidunt rem similique, iure magni!</p>
                     </div>
                 </section>
             </div>
+
             <div class="leftcolumn">
                 <section class="sidebox" id="titanbox">
                     <h3>Behold the Gods</h3>
-                    <p>Every aspect of life on Zillaria is based around the presence, worship, and/or fear of the mighty <a class="inlinelink" href="titans.html">world titans</a>. A vast pantheon of minor, major, and god titans, rule over this hostile world, each shaping the geography, culture, and people of the regions they inhabit. Click <a href="titans.html"><span class="inlinelink">here</span></a> to read more about the titans of Zillaria.</p>
+                    <p>Every aspect of life on Zillaria is based around the presence, worship, and/or fear of the mighty <a class="inlinelink" href="titans.html">world titans</a>. A vast pantheon of minor, major, and god titans rule over this hostile world, each shaping the geography, culture, and people of the regions they inhabit. Click <a href="titans.html"><span class="inlinelink">here</span></a> to read more about the titans of Zillaria.</p>
                 </section>
                 <section class="sidebox" id="realmbox">
                     <h3>Explore the Stomping Grounds</h3>

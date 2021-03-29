@@ -88,6 +88,10 @@ header {
         margin-top: 0px;
     }
 
+    header p {
+        display:none;
+    }
+
 /*NAV BAR*/
 nav {
     background-color: var(--navbg);
@@ -152,10 +156,8 @@ section {
     
     margin-right: var(--globalmar);
 }
-
-
         
-        /*sets borders and background for introsection*/
+        /*sets borders and background for introsection* PARENT: .RIGHTCOLUMN*/
         .introsection {
             border-radius: var(--rounderedge);
             border-color: var(--navbg);
@@ -180,7 +182,8 @@ section {
                 padding-right: var(--globalpad);
                 padding-left: var(--globalpad);
             }
-
+        
+        /*second box in right column flex* PARENT: .RIGHTCOLUMN*/
         .slideshow {
             background: var(--maincolor);
 
@@ -208,12 +211,14 @@ section {
                 transition: 500ms;
             }
 
-/*LEFT FLEX BOX*/
+/*LEFT FLEX BOX (PARENT: MAIN) */
 .leftcolumn {
     flex: 1;
     order: 1;
 
     margin-left: var(--globalmar);
+    display: flex;
+    flex-direction: column;
 }
 
     .sidebox {
@@ -261,7 +266,7 @@ section {
             background-size: cover;
         }
 
-/*CONTACT US STYLES*/
+/*CONTACT US STYLES* PARENT: .WRAPPER*/
 footer {
     align-items: flex-end;
     justify-content: flex-end;
@@ -279,3 +284,82 @@ footer {
         margin-top: 0px;
         padding-top: 0px;
     }
+
+/*PHONE/TABLET DISPLAY*/
+
+@media only screen and (max-width: 768px) {
+
+    .wrapper {
+        flex: none;
+
+        display: flex;
+    }
+
+    header {
+        flex: none;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav {
+        flex: none;
+    }
+
+        nav ul {
+            flex: none;
+            padding-left: 0px;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: auto 5px;
+        }
+
+    body {
+        flex: none;
+    }
+
+    main {
+        flex: none;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+        .rightcolumn {
+            flex: none;
+            align-self: flex-start;
+            order: 1;
+            flex: 2;
+
+            margin-right: 0px;
+        }
+
+            .introsection {
+                margin-right: 0px;
+            }
+
+            .slideshow {
+                display: none;
+            }
+
+            #bottomintrosec {
+                display: none;
+            }
+
+        .leftcolumn {
+            flex: none;
+
+            align-self: flex-end;
+            order: 2;
+        }
+
+    footer {
+        flex: none;
+    }
+
+}
