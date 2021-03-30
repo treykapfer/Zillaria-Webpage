@@ -65,10 +65,9 @@ body {
         text-shadow: 1px 1px 5px var(--whitesmoke);
     }
 
-
 /*HEADER DECLARATIONS*/
 header {
-    background-image: url(scale_pattern.png);
+    background-image: url(assets/scale_pattern.png);
     background-color: var(--headerbg);
     color: var(--headertext);
 
@@ -81,7 +80,7 @@ header {
         margin-bottom: 0px;
         margin-top: .25em;
         font-weight: bold;
-        font-size: 4em;
+        font-size: 5em;
     }
 
     header h2 {
@@ -109,6 +108,8 @@ nav {
         nav li {
             margin: var(--globalmar);
             padding: var(--globalpad);
+
+            font-size: 1.2em;
             
             border-radius: var(--roundedge);
             border-color: var(--headerbg);
@@ -121,7 +122,7 @@ nav {
             color: var(--headertext);
 
             background-origin: padding-box;
-            background-image: url(scale_pattern.png);
+            background-image: url(assets/scale_pattern.png);
             background-size: 10rem;
         }
 
@@ -150,9 +151,6 @@ section {
 
     display: flex;
     flex-direction: column;
-
-    padding-right: var(--globalpad);
-    padding-left: var(--globalpad);
     
     margin-right: var(--globalmar);
 }
@@ -165,7 +163,7 @@ section {
             border-width: 3px;
     
             background-color:var(--sectionbg);
-            background-image: url(roughback2.png);
+            background-image: url(assets/roughback2.png);
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -207,8 +205,6 @@ section {
 
                 padding-right: 2em;
                 padding-left: 2em;
-
-                transition: 500ms;
             }
 
 /*LEFT FLEX BOX (PARENT: MAIN) */
@@ -244,25 +240,25 @@ section {
         /*individual styles*/
         #titanbox {
             background-color: rgb(30, 39, 30);
-            background-image: url(kaijuback.png);
+            background-image: url(assets/kaijuback.png);
             background-size: cover;
         }
 
         #realmbox {
             background-color: rgb(39, 39, 32);
-            background-image: url(mapback.png);
+            background-image: url(assets/mapback.png);
             background-size: cover;
         }
 
         #racepplbox {
             background-color: rgb(39, 32, 32);
-            background-image: url(racesback.png);
+            background-image: url(assets/racesback.png);
             background-size: cover;
         }
 
         #historybox {
             background-color: rgb(32, 33, 39);
-            background-image: url(historyback.png);
+            background-image: url(assets/historyback.png);
             background-size: cover;
         }
 
@@ -317,6 +313,7 @@ footer {
 
         nav li {
             margin: auto 5px;
+            text-align: center;
         }
 
     body {
@@ -337,6 +334,8 @@ footer {
             flex: 2;
 
             margin-right: 0px;
+            margin-left: 0px;
+            padding-left: 0px;
         }
 
             .introsection {
@@ -356,6 +355,9 @@ footer {
 
             align-self: flex-end;
             order: 2;
+            margin-right: 0px;
+            margin-left: 0px;
+            padding-left: 0px;
         }
 
     footer {
