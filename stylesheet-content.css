@@ -131,12 +131,11 @@ main {
 }
 
 section {
-    margin: var(--globalmar);
-    padding: var(--globalpad);
+    padding-bottom: var(--globalpad);
 }
 
     /*FLEX PARENT OF MAIN*/
-    .sectionhead { 
+    .sectionparent { 
         display: flex;
         flex-direction: column;
 
@@ -145,19 +144,45 @@ section {
         border-style: solid;
         border-width: 3px;
 
+        background-image: url(assets/roughback2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
         margin: 10px auto;
         max-width: 1148px;
     }
 
-        .sectionhead h2 {
-            padding-left: 1em;
+        /*FLEX PARENT OF SECTIONPARENT*/
+        .sectionhead {
+            display: flex;
+            justify-content: center;
+
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-color: var(--maincolor);
+            border-style: solid;
+            border-width: 1px;
+
+            background-image: url(assets/scale_pattern_50.png);
+            background-size: 10rem;
+            background-color: var(--maincolor);
+            color: var(--headertext);
+
+            margin-bottom: var(--globalmar);
         }
 
-        /*FLEX PARENT OF SECTIONHEADER*/
+            .sectionhead h2 {
+                font-size: 2rem;
+                text-align: center;
+                margin: 3px;
+            }
+
+        /*FLEX PARENT OF SECTIONPARENT*/
         .sectionbox {
             display: flex;
             flex-wrap: wrap;
             margin: 0px auto;
+            justify-content: center;
         }
 
             .boxchild {
@@ -169,7 +194,7 @@ section {
                 margin: var(--globalmar);
                 padding: var(--globalpad);
 
-                min-width: 248px;
+                min-width: 233px;
                 
                 text-align: center;
             }
@@ -208,6 +233,9 @@ footer {
 
     text-align: right;
     color: var(--headertext);
+
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
     footer h3 {
@@ -219,3 +247,64 @@ footer {
         margin-top: 0px;
         padding-top: 0px;
     }
+
+/* MEDIA BREAKS */
+
+@media only screen and (max-width: 1444px) {
+    main {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+}
+
+@media only screen and (max-width: 844px) {
+/*NAV BAR FIX*/
+    nav {
+        flex: none;
+    }
+
+        nav ul {
+            flex: none;
+            padding-left: 0px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            margin: auto 5px;
+            text-align: center;
+        }
+
+}
+
+/*MOBILE DISPLAY*/
+@media only screen and (max-width: 600px) {
+
+    nav li {
+        font-size: 1em;
+    }
+
+    .sectionhead h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 3px;
+    }
+    
+    .boxchild {
+        border-radius: var(--rounderedge);
+        border-color: var(--maincolor);
+        border-style: solid;
+        border-width: 3px;
+
+        margin: var(--globalmar);
+        padding: var(--globalpad);
+
+        min-width: 166px;
+
+        font-size: .75em;
+        text-align: center;
+    }
+
+}

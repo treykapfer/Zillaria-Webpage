@@ -267,6 +267,9 @@ footer {
 
     text-align: right;
     color: var(--headertext);
+
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
     footer h3 {
@@ -283,24 +286,6 @@ footer {
 
 @media only screen and (max-width: 844px) {
 
-    .wrapper {
-        flex: none;
-
-        display: flex;
-    }
-
-    header {
-        flex: none;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    nav {
-        flex: none;
-    }
-
         nav ul {
             flex: none;
             padding-left: 0px;
@@ -314,10 +299,6 @@ footer {
             margin: auto 5px;
             text-align: center;
         }
-
-    body {
-        flex: none;
-    }
 
     main {
         flex: none;
@@ -337,14 +318,6 @@ footer {
             padding-left: 0px;
         }
 
-            .introsection {
-                margin-right: 0px;
-            }
-
-            #bottomintrosec {
-                display: none;
-            }
-
         .leftcolumn {
             flex: none;
 
@@ -354,10 +327,6 @@ footer {
             margin-left: 0px;
             padding-left: 0px;
         }
-
-    footer {
-        flex: none;
-    }
 
 }
 
