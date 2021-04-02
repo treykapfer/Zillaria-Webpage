@@ -1,5 +1,6 @@
 /*THIS IS THE STYLE SHEET FOR THE HOME PAGE*/
 /*GLOBAL DECLARATIONS*/
+
 :root {
     --headerbg: rgb(49, 58, 50);
     --sectionbg: rgb(49, 58, 50);
@@ -21,15 +22,10 @@
 
 /*IMPORTED FONTS
 font-family: 'Aclonica', sans-serif;
-
 font-family: 'Bungee Inline', cursive;
-
 font-family: 'Marcellus SC', serif;
-
 font-family: 'Reggae One', cursive;
-
 font-family: 'Sigmar One', cursive;
-
 font-family: 'Roboto', sans-serif;
 */
 

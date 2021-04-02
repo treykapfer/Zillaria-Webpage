@@ -1,4 +1,4 @@
-/*THIS IS THE STYLE SHEET FOR THE HOME PAGE*/
+/*THIS IS THE STYLE SHEET FOR THE INDEX PAGES*/
 /*GLOBAL DECLARATIONS*/
 :root {
     --headerbg: rgb(49, 58, 50);
@@ -199,18 +199,6 @@ section {
                         background-image: url(assets/thauglit.png);
                         background-repeat: no-repeat;
                         background-size: cover;
-                    }
-
-                #reik {
-                    background-image: url(assets/reik_trans.png);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-color: var(--maincolor);
-
-                }
-
-                    #reik:hover {
-                        background-color:rgb(58, 58, 49);
                     }
 
 /*CONTACT US STYLES* PARENT: .WRAPPER*/
