@@ -18,3 +18,105 @@
     --roundedge: 10px;
     --rounderedge: 25px;
 }
+
+/*IMPORTED FONTS
+font-family: 'Aclonica', sans-serif;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Marcellus SC', serif;
+font-family: 'Reggae One', cursive;
+font-family: 'Sigmar One', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+/*DESKTOP DISPLAY*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--wrapback);
+
+    font-family: 'Marcellus SC', serif;
+}
+
+
+body {
+    /*remove invsible margins*/
+    margin: 0px auto;
+}
+
+    /*LINK STYLES*/
+    a:link {
+        text-decoration: none;
+        color: var(--headertext);
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: var(--headertext);
+    }
+
+    a:hover {
+        text-shadow: 1px 1px 5px var(--whitesmoke);
+    }
+
+/*HEADER DECLARATIONS*/
+header {
+    background-image: url(assets/scale_pattern.png);
+    background-color: var(--headerbg);
+    color: var(--headertext);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+    header h1 {
+        margin-bottom: 0px;
+        margin-top: .25em;
+        font-weight: bold;
+        font-size: 5em;
+    }
+
+    header h2 {
+        margin-top: 0px;
+    }
+
+    header p {
+        display:none;
+    }
+
+/*NAV BAR*/
+nav {
+    background-color: var(--navbg);
+    color: var(--headertext);
+}
+
+    nav ul {
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+
+        list-style: none;
+    }
+
+        nav li {
+            margin: var(--globalmar);
+            padding: var(--globalpad);
+
+            font-size: 1.2em;
+            
+            border-radius: var(--roundedge);
+            border-color: var(--headerbg);
+            border-style: solid;
+        }
+
+        /*NAV LINK STYLE*/        
+        nav li:hover {
+            text-decoration: none;
+            color: var(--headertext);
+
+            background-origin: padding-box;
+            background-image: url(assets/scale_pattern.png);
+            background-size: 10rem;
+        }
