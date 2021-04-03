@@ -83,10 +83,6 @@ header {
         margin-top: 0px;
     }
 
-    header p {
-        display:none;
-    }
-
 /*NAV BAR*/
 nav {
     background-color: var(--navbg);
