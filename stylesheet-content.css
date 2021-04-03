@@ -8,7 +8,7 @@
     --headertext: honeydew;
     --whitesmoke: rgba(255, 255, 255, 0.74);
     --bodybg: rgb(167, 204, 172);
-    --highlight: rgb(153, 0, 255);
+    --highlight: rgb(255, 255, 255);
     --maincolor: black;
 
     --breakpoint1: 768px;
@@ -186,6 +186,8 @@ section {
         }
 
             .boxchild {
+                order: 1;
+
                 border-radius: var(--rounderedge);
                 border-color: var(--maincolor);
                 border-style: solid;
@@ -195,11 +197,32 @@ section {
                 padding: var(--globalpad);
 
                 min-width: 233px;
+                max-width: 1000px;
                 
                 text-align: center;
+
+                transition: 1000ms;
+
+                background-color: var(--headerbg);
+                background-image: url(assets/scratch_texture.png);
             }
 
+                /*set default to no displayfor java*/
+                .boxchild p {
+                    font-size: 1.25rem;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                .boxchild a {
+                    font-weight: bold;
+                    font-style: italic;
+                    font-size: 1.5em;
+                    color: var(--highlight);
+                }
+
+
             /*all box ids*/
+            /*page test*/
                 #kythnyaltu {
                     background-image: url(assets/kythnyaltu_trans.png);
                     background-repeat: no-repeat;
@@ -225,6 +248,32 @@ section {
                         background-repeat: no-repeat;
                         background-size: cover;
                     }
+
+                    #soldura {
+                        background-image: url(assets/soldura_trans.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-color:rgb(46, 35, 51);
+                    }
+
+                        #soldura:hover {
+                            background-image: url(assets/soldura.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+
+                    #balcoth {
+                        background-image: url(assets/balcoth_trans.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-color:rgb(51, 35, 35);
+                    }
+
+                        #balcoth:hover {
+                            background-image: url(assets/balcoth.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
 
 /*CONTACT US STYLES* PARENT: .WRAPPER*/
 footer {
@@ -306,5 +355,11 @@ footer {
         font-size: .75em;
         text-align: center;
     }
+
+    .boxchild h3 {
+        font-size: 1em;
+    }
+    .boxchild p {
+        font-size: 1rem;
 
 }
